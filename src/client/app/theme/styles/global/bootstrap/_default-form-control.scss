@@ -1,0 +1,43 @@
+/**
+ * @license
+ * Copyright Akveo. All Rights Reserved.
+ * Licensed under the MIT License. See License.txt in the project root for license information.
+ */
+
+@mixin form-control-default() {
+  .form-control-success {
+    @include form-control-success();
+  }
+
+  .form-control-danger {
+    @include form-control-danger();
+  }
+
+  .form-control-warning {
+    @include form-control-warning();
+  }
+}
+
+@mixin form-control-success() {
+  @include form-control-success-focus();
+}
+
+@mixin form-control-danger() {
+  @include form-control-danger-focus();
+}
+
+@mixin form-control-warning() {
+  @include form-control-warning-focus();
+}
+
+@mixin form-control-success-focus() {
+  border-color: nb-theme(form-control-success-border-color);
+}
+
+@mixin form-control-danger-focus() {
+  border-color: nb-theme(form-control-danger-border-color);
+}
+
+@mixin form-control-warning-focus() {
+  border-color: nb-theme(form-control-warning-border-color);
+}

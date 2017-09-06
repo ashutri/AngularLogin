@@ -1,0 +1,8 @@
+
+@mixin nb-auth-block-theme() {
+  nb-auth-block .auth-block {
+    max-width: nb-theme(auth-block-max-width);
+    padding: nb-theme(auth-block-padding);
+    margin-top: nb-theme(auth-block-margin-top !important);
+  }
+}

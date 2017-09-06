@@ -1,0 +1,61 @@
+/**
+ * @license
+ * Copyright Akveo. All Rights Reserved.
+ * Licensed under the MIT License. See License.txt in the project root for license information.
+ */
+
+@mixin nb-menu-theme() {
+  nb-menu {
+    font-family: nb-theme(menu-font-family);
+    font-size: nb-theme(menu-font-size);
+
+    .menu-group {
+      font-weight: nb-theme(menu-group-font-weight);
+      font-size: nb-theme(menu-group-font-size);
+      color: nb-theme(menu-group-fg);
+    }
+
+    .menu-group,
+    .menu-item > a {
+      padding: nb-theme(menu-item-padding);
+    }
+
+    .menu-item {
+      a:hover {
+        background-color: nb-theme(menu-active-bg);
+        color: nb-theme(menu-active-fg);
+      }
+
+      a.active {
+        background-color: nb-theme(menu-active-bg);
+        color: nb-theme(menu-active-fg);
+      }
+    }
+
+    .menu-items.expanded {
+      background-color: nb-theme(menu-submenu-bg);
+    }
+  }
+
+  nb-menu.inverse {
+    .menu-item {
+      a {
+        color: nb-theme(menu-bg);
+      }
+
+      a:hover {
+        background-color: nb-theme(menu-active-fg);
+        color: nb-theme(menu-active-bg);
+      }
+
+      a.active {
+        background-color: nb-theme(menu-active-fg);
+        color: nb-theme(menu-active-bg);
+      }
+    }
+
+    .menu-group {
+      color: nb-theme(menu-bg);
+    }
+  }
+}
