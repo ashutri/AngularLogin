@@ -11,8 +11,7 @@ import { List } from 'immutable';
 import { NbThemeModule } from './theme/theme.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import {  AuthenticationService } from './auth/services/authentication.service';
-import {  AlertService } from './auth/services/alert.service';
+
 import {  NbDummyAuthProvider } from './auth/providers/dummy-auth.provider';
 import {  NbAbstractAuthProvider } from './auth/providers/abstract-auth.provider';
 import {   NbEmailPassAuthProvider } from './auth/providers/email-pass-auth.provider';
@@ -72,8 +71,7 @@ let authOptionsToken: AuthOptions = {name: 'NB_AUTH_OPTIONS'};
   
   declarations: [AppComponent, ],
   providers: [
-    AuthenticationService,
-    AlertService,
+
     
     {
       
